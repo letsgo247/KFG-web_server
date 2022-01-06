@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+    <!-- Result -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Check the result!</h1>
+
+                    <hr class="divider" />
+                </div>
+
+                <div class="col-lg-8 align-self-baseline">
+                    <img src="{{out_path}}" alt="" style='width: 100%;'>
+                    <hr class="divider" />
+                    <a class="btn btn-primary btn-xl" href=".">Go GANerate again!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
